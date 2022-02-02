@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/weblogo.jpg">
+    <title>PUMA FRAGRANCES</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class ="container">
+        <!-- HEADER FIXE AVEC LOGO PUMA-->
+        <div class = "header">
+            <img class = "logopuma" src="../img/logo.png">
+        </div>
+        <!-- SCREEN1 CONTENANT LA VIDEO ET LE PRODUIT-->
+        <div class = "screen1">
+            <div class = "videobox">
+                <video src="../img/video.mp4" autoplay muted loop></video>
+            </div>
+            <img class ="produit" src="../img/produit.png">
+        </div>
+        <!-- SCREEN2 CONTENANT LE TEXTE ET LA MAP-->
+        <div id = "screen2">
+            <div id ="hide">
+                <h1>RETROUVE TON DÉODORANT CHEZ</h1>
+                <ul>
+                    <li>LECLERC</li>
+                    <li>12 BOULEVARD DU TEMPLE</li>
+                    <li>PARIS 75011</li>
+                    </ul>
+                <div id ="map"></div>
+            </div>
+        </div>
+        <!-- FLECHES ANIMEES-->
+        <div id="arrow">
+            <span></span>
+            <span></span>
+        </div>
+        <!-- BUTTONS EN PROFITER / J'Y VAIS-->
+        <button onclick="myFunction()" id ="button"><img class ="enprofiter" src ="../img/enprofiter.png"></button>
+        <a href="https://www.amazon.fr/PUMA-Fragrances-Eau-Toilette-Live/dp/B079DH73PL" id="link"><img class ="jyvais" src ="../img/jyvais.png"></a>
+
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOWpeALq2WY-Ey7Hq281CijzgJcVw5sDY&callback=initMap" async>
+    </script>
+</body>
+
+</html>
